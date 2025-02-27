@@ -48,12 +48,12 @@ winget install --id Cloudflare.cloudflared
 
 ## Quick Start
 After installation, you can start using it without registering or logging into a Cloudflare account. Here are the specific steps:
-1. Verify Local Service
+### 1. Verify Local Service
 First, verify your local service is running. In this example, we can see a Nginx Server running on port 80.
 
 ![]({{'/assets/img/Quick-Tunnel/curl.png' | relative_url }})
 
-2. Create TunnelRun the following command to create a tunnel:
+### 2. Create TunnelRun the following command to create a tunnel:
 
 ```bash
 cloudflared tunnel --url localhost:80
@@ -63,7 +63,7 @@ This will generate a HTTPS domain (a subdomain of trycloudflare.com), for exampl
 
 ![]({{'/assets/img/Quick-Tunnel/domain.png' | relative_url }})
 
-3. Verify Connection
+### 3. Verify Connection
 
 Visit the generated domain to verify the tunnel is working properly.
 
