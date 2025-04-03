@@ -35,8 +35,6 @@ Runtime Security Analysis Results:
 
 <u>Analysis confirms persistence of the original taint source vector, indicating unresolved vulnerability state. The taint sink examination reveals implementation of a prefix-based validation mechanism for Base64-decoded input, where execution is contingent upon the "secret" prefix identifier. The security control employs substring(6) for prefix truncation and implements command whitelisting logic, attempting to mitigate arbitrary command execution through pattern-based input validation.</u>
 
-<u>Again, the POC validate the command injection vulnerability by sending a Base64-encoded shell command with a prefix match to a specified URL. By combining the prefix "secret" with the command, it tests whether the server is susceptible to remote code execution. Additionally, it uses HTTP headers to mimic legitimate requests, revealing potential security weaknesses in the application's input handling.</u>
-
 ![]({{'/assets/img/Bandaid/report-3-POC.png' | relative_url }})
 
 <u>The proof-of-concept demonstrates successful exploitation by leveraging a crafted Base64-encoded payload, incorporating the required "secret" prefix pattern to bypass input validation. The attack vector utilizes targeted HTTP header manipulation to simulate legitimate traffic patterns while delivering the malicious command string. Dynamic analysis confirms remote code execution vulnerability persists despite prefix validation, exposing critical flaws in the application's command sanitization logic and input boundary validation mechanisms.</u>
