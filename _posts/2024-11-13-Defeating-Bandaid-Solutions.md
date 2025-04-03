@@ -1,7 +1,7 @@
 In what appeared to be a routine security assessment, our vulnerability detection framework encountered an unexpected challenge that would test its limits. The engagement began with a classic command injection vector, but rapidly escalated into an intricate battle of wits - pitting advanced detection algorithms against increasingly sophisticated evasion techniques. This technical analysis, properly authorized and anonymized, reveals how our system methodically dismantled multiple layers of carefully crafted obfuscation. Watch as each evolutionary step in the evasion process - from basic encoding to complex polymorphic mutations - falls to systematic analysis, culminating in precise proof-of-concept exploits that expose the underlying vulnerabilities.
 
 ## 1. Security Finding - OS Command Injection Vulnerability
-Analysis of Initial Security Finding::
+Analysis of Initial Security Finding:
 
 ![]({{'/assets/img/Bandaid/1ts.png' | relative_url }})
 
@@ -9,7 +9,7 @@ Analysis of Initial Security Finding::
 
 ![]({{'/assets/img/Bandaid/report-1-POC.png' | relative_url }})
 
-<u>The analysis identifies the vulnerability's entry point (taint source) and the execution context (taint sink), accompanied by a proof-of-concept demonstrating arbitrary shell command execution via crafted payload injection.</u>. 
+<u>The analysis identifies the vulnerability's entry point (taint source) and the execution context (taint sink), accompanied by a proof-of-concept demonstrating arbitrary shell command execution via crafted payload injection.</u> 
 
 To validate detection capabilities, the user implemented a Base64 encoding middleware as an evasion attempt rather than applying proper input sanitization. The modified codebase was then resubmitted for dynamic security analysis to evaluate bypass resistance.
 
