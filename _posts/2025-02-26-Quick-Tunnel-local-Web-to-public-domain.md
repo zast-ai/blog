@@ -1,3 +1,7 @@
+---
+title: "Quick Tunnel: Local Web To Public Domain"
+---
+
 ## Background
 
 When creating security assessment tasks with ZAST, we often need to prepare for target project deployment. During this process, two common requirements typically arise:
