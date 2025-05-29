@@ -1,5 +1,7 @@
 ---
 title: "When Features Become Flaws: Assessing Component Vulnerabilities"
+categories: [security]
+permalink: /when-features-become-flaws-assessing-component-vulnerabilities/
 ---
 
 ## Introduction
