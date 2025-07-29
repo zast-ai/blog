@@ -55,7 +55,7 @@ The results of the last ten days have been humbling and affirming:
 
   ![Zast.ai vulnerability submissions on VulDB.com]({{'/assets/img/vuldb/number1.png' | relative_url }})
 
-- In just over a week, Zast.ai has reached **#37** among all-time global contributors on [VulDB.com](https://vuldb.com/).
+- In just over a week, Zast.ai has reached **#31** among all-time global contributors on [VulDB.com](https://vuldb.com/).
   The impact of these discoveries extends far beyond numbers. Our vulnerability findings span from critical infrastructure components to popular development tools, representing some of the most widely-used open source projects in the world.
 
   ![Star count distribution of affected repositories]({{'/assets/img/vuldb/starpie.png' | relative_url }})
