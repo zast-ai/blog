@@ -32,7 +32,7 @@ Give the project a name, choose and upload the source code archive package (with
 
 ## Step 2:
 
-Simply enter the URL of the target service url.
+Simply enter the URL of the API BASE URL.
 
 ![]({{'/assets/img/ZastxCodespace/check.jpg' | relative_url }})
 
@@ -52,7 +52,7 @@ Then we can proceed to upload the source code. <a href="https://zast.ai" target=
 
 ## Step 5:
 
-Next, we need to use the embedded browser to log in to test accounts. Change the default target service URL in the address bar to the login URL.
+Next, we need to use the embedded browser to log in to test accounts. Change the default Simply change the API BASE URL in the address bar to the login URL.
 
 ![]({{'/assets/img/ZastxCodespace/browser1.jpg' | relative_url }})
 
