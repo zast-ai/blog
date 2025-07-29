@@ -1,6 +1,6 @@
 ---
 title: "A Shared Pursuit: Introducing Zast.ai"
-description: "Introducing Zast.ai - the world's first AI agent that can analyze code logic, identify vulnerabilities, create POCs, and verify exploitability with zero false positives. Join us in making software more secure."
+description: "Introducing Zast.ai - AI agent that can identify vulnerabilities, and verify exploitability with zero false positives. Join us in making software more secure."
 keywords: "Zast.ai, AI security, vulnerability detection, zero-day vulnerabilities, application security testing, automated security, code analysis, PoC generation, cybersecurity, software security"
 author: "Geng Yang"
 date: 2025-07-29

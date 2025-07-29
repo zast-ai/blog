@@ -313,7 +313,7 @@ defaults:
       author_profile: false
       read_time: true
       comments: false
-      share: false
+      share: true
       related: false
   # _docs
   - scope:
