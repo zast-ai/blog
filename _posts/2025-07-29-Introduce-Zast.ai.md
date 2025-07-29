@@ -37,7 +37,7 @@ During its development, Zast.ai uncovered hundreds of zero-day vulnerabilities. 
 
 The results of the last ten days have been humbling and affirming:
 
-- As of July 28th, we have submitted **77** vulnerabilities.
+- As of July 28th, we have submitted **78** vulnerabilities.
   ![Vulnerability submissions growth on VulDB.com]({{'/assets/img/vuldb/growth.png' | relative_url }})
 - This effort has made Zast.ai the **#1** global contributor to VulDB for the month of July, 2025.
   ![Zast.ai vulnerability submissions on VulDB.com]({{'/assets/img/vuldb/number1.png' | relative_url }})
