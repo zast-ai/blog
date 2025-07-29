@@ -16,7 +16,7 @@ last_modified_at: 2025-07-29
 
 **Geng Yang**  
 Co-founder & CEO, Zast.ai  
-July 28, 2025
+July 28, 2025, Seattle
 
 ---
 
