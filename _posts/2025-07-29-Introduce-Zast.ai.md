@@ -65,18 +65,9 @@ Zast.ai is designed to deliver proof, not just alerts:
 
 You can integrate Zast.ai into your workflow in minutes.
 
-**Option 1: Web Portal (available to public today)**
-
 1. Deploy your code in a test environment or start a local debug session.
 2. Visit [https://zast.ai](https://zast.ai) and follow the on-screen instructions to create an assessment task.
 3. You'll receive an email notification when the assessment is completed.
-
-**Option 2: IDE Extension (VS Code / Cursor) — to be released soon**
-
-1. Install the `zast.extension` from the marketplace.
-2. Start a debugging session for your application to create a running test environment.
-3. Launch a new security assessment using the command palette (Ctrl+Shift+P: "zast: start a new assessment").
-4. That's it. A detailed report will be waiting in the `./zast` folder upon completion.
 
 ---
 
