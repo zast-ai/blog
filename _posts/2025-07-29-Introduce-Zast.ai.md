@@ -47,8 +47,6 @@ The impact of these discoveries extends far beyond numbers. Our vulnerability fi
 
 ![Star count distribution of affected repositories]({{'/assets/img/vuldb/starpie.png' | relative_url }})
 
-![Star count distribution of affected repositories]({{'/assets/img/vuldb/starcolumn.png' | relative_url }})
-
 We don't share these numbers to boast, but to offer as a proof of concept: that an AI partner, focused with precision, can meaningfully enhance human expertise and help secure the code we all rely on.
 
 ---
