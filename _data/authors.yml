@@ -1,0 +1,33 @@
+# Authors configuration for individual posts
+# Usage: Set author: "geng-yang" in post front matter
+
+"Geng Yang":
+  name: "Geng Yang"
+  bio: "Co-founder & CEO, Zast.ai. Security research expert focused on AI-powered vulnerability detection."
+  avatar: "/assets/img/logo-single.png" # You can add individual author avatar later
+  location: "Seattle, WA"
+  links:
+    - label: "zast.ai"
+      icon: "fas fa-fw fa-link"
+      url: "https://zast.ai"
+    - label: "X (Twitter)"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://twitter.com/zast_ai"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zast-ai/zast"
+"Zast.ai Team":
+  name: "Zast.ai Team"
+  bio: "AI agent that can identify vulnerabilities, and verify exploitability with zero false positives"
+  avatar: "/assets/img/logo-single.png" # You can add individual author avatar later
+  location: "Seattle, WA"
+  links:
+    - label: "zast.ai"
+      icon: "fas fa-fw fa-link"
+      url: "https://zast.ai"
+    - label: "X (Twitter)"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://twitter.com/zast_ai"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zast-ai"

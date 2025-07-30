@@ -7,20 +7,16 @@ date: 2025-07-29
 categories: ["Security", "AI", "Vulnerability Assessment"]
 tags:
   [
-    "Zast.ai",
     "vulnerability detection",
     "AI security",
-    "zero-day",
-    "application security",
-    "automated testing",
-    "cybersecurity",
+    "zero-day vulnerabilities",
+    "automated security",
     "code analysis",
+    "cybersecurity",
+    "vulDB",
   ]
-image: "/assets/img/logo-single.png"
-image_alt: "Zast.ai Logo"
-og_image: "/assets/img/logo-single.png"
-twitter_image: "/assets/img/logo-single.png"
-canonical_url: "https://zast.ai/blog/introducing-zast-ai"
+header:
+  og_image: "/assets/img/logo-single.png"
 last_modified_at: 2025-07-29
 ---
 

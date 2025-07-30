@@ -5,12 +5,9 @@ keywords: "Zast.ai tutorial, vulnerability assessment guide, security testing, c
 author: "Zast.ai Team"
 date: 2025-07-28
 categories: ["Tutorial", "Security", "AI"]
-tags: ["Zast.ai", "tutorial", "vulnerability assessment", "security testing", "how-to", "user guide", "step-by-step", "AI security"]
-image: "/assets/img/ZastxCodespace/upload.jpg"
-image_alt: "Zast.ai upload interface showing file upload step"
-og_image: "/assets/img/ZastxCodespace/upload.jpg"
-twitter_image: "/assets/img/ZastxCodespace/upload.jpg"
-canonical_url: "https://zast.ai/blog/how-to-use-zast-ai"
+tags: ["vulnerability assessment", "AI security", "cybersecurity"]
+header:
+  og_image: "/assets/img/ZastxCodespace/upload.jpg"
 last_modified_at: 2025-07-28
 ---
 
