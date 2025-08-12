@@ -34,3 +34,6 @@ Disallow: /
 
 User-agent: Omgilibot
 Disallow: /
+
+User-agent: *
+Allow: /
