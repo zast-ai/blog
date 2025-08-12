@@ -21,7 +21,7 @@ title: "Zast.ai"
 title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "Zast.ai"
-description: "Leading security research lab providing AI vulnerability research agents"
+description: "AI agent that can identify vulnerabilities, and verify exploitability with zero false positives."
 url: "https://blog.zast.ai"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
