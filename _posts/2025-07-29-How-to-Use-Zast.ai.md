@@ -3,14 +3,19 @@ title: "How to Use Zast.ai"
 description: "Complete step-by-step guide on how to use Zast.ai for vulnerability assessment. Learn how to upload code, verify ownership, add test accounts, and get detailed security reports with zero false positives."
 keywords: "Zast.ai tutorial, vulnerability assessment guide, security testing, code upload, ownership verification, test accounts, security reports, AI security, automated vulnerability detection"
 author: "Zast.ai Team"
-date: 2025-07-28
+date: 2025-07-29
 categories: ["Tutorial", "Security", "AI"]
 tags: ["vulnerability assessment", "AI security", "cybersecurity"]
 header:
   og_image: "/assets/img/ZastxCodespace/upload.jpg"
-last_modified_at: 2025-07-28
+last_modified_at: 2025-07-29
 ---
 
+**Zast.ai Team**,  
+
+July 29, 2025, Seattle
+
+---
 In this post, we will show you how to use <a href="https://zast.ai" target="_blank">zast.ai</a> to assess vulnerability step by step. Simply visit <a href="https://zast.ai" target="_blank">zast.ai</a> and register for an account to get started. Currently, new account holders need to apply to join a waitlist for activation. Please ensure you provide thorough information on the waitlist application page to expedite your early access.
 
 There are five steps to finish an assessment on <a href="https://zast.ai" target="_blank">zast.ai</a>.
