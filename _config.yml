@@ -248,6 +248,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-target-blank
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -257,6 +258,7 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-target-blank
 
 # Archives
 #  Type

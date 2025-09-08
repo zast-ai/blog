@@ -1,0 +1,21 @@
+stages:
+  - release
+
+variables:
+  GIT_DEPTH: 0
+  GIT_STRATEGY: clone
+  GIT_SUBMODULE_STRATEGY: none
+
+# Release job triggered by tag creation
+release_to_github:
+  stage: release
+  image: alpine:latest
+  rules:
+    - if: $CI_COMMIT_TAG
+  before_script:
+    - apk add --no-cache git bash curl
+    - git config --global user.email "$GIT_AUTHOR_EMAIL"
+    - git config --global user.name "$GIT_AUTHOR_NAME"
+  script:
+      - chmod +x "${CI_PROJECT_DIR}/.gitlab/release.sh"
+      - "${CI_PROJECT_DIR}/.gitlab/release.sh"
