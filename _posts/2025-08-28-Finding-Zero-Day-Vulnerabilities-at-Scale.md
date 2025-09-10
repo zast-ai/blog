@@ -2,18 +2,19 @@
 title: "Finding Zero-Day Vulnerabilities at Scale: Our Journey with Zast.ai"
 description: "Learn about our journey using Zast.ai to discover hundreds of zero-day vulnerabilities across the open-source ecosystem at scale, and the challenges we faced in responsibly disclosing them."
 author: "Chris"
-date: 2025-09-04
+date: 2025-09-10
 categories: [Security, AI, Open Source]
 tags: [Zero-Day, Vulnerability Disclosure, Zast.ai, Log4Shell, Automation, CVE]
+hidden: true
 ---
 
 **Chris**,  
 Co-founder, Zast.ai  
-Sep. 04, 2025, Seattle
+Sep. 10, 2025, Toronto
 
 ---
 
-In our previous blog post, we introduced [Zast.ai](https://zast.ai/), our AI agent for automated vulnerability discovery with zero false positives. Today, we're excited to share how we've put this technology to work in pursuit of a bold goal: assessing the entire open-source ecosystem to find the next Log4Shell.
+In our previous blog ***[Vulnerability Disclosure Challenges in Open Source Projects](https://blog.zast.ai/security/open%20source/vulnerability%20disclosure/Vulnerability-Disclosure-Challenges-in-Open-Source-Projects/)***, we used CVE-2025-46653 to discuss open source vulnerability disclosure hurdles and effort, aiming to boost collaboration. Today, we’re excited to share how we’ve put this technology to work in pursuit of a bold goal: assessing the entire open-source ecosystem to find the next Log4Shell.
 
 ## The Ambition: Assess the Entire Open Source Ecosystem
 
