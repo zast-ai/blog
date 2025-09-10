@@ -14,7 +14,7 @@ Sep. 10, 2025, Toronto
 
 ---
 
-In our previous blog ***[Vulnerability Disclosure Challenges in Open Source Projects](https://blog.zast.ai/security/open%20source/vulnerability%20disclosure/Vulnerability-Disclosure-Challenges-in-Open-Source-Projects/)***, we used CVE-2025-46653 to discuss open source vulnerability disclosure hurdles and effort, aiming to boost collaboration. Today, we’re excited to share how we’ve put this technology to work in pursuit of a bold goal: assessing the entire open-source ecosystem to find the next Log4Shell.
+In our previous blog ***[Vulnerability Disclosure Challenges in Open Source Projects](https://blog.zast.ai/security/open%20source/vulnerability%20disclosure/Vulnerability-Disclosure-Challenges-in-Open-Source-Projects/){:target="_blank"}***, we used CVE-2025-46653 to discuss open source vulnerability disclosure hurdles and effort, aiming to boost collaboration. Today, we’re excited to share how we’ve put this technology to work in pursuit of a bold goal: assessing the entire open-source ecosystem to find the next Log4Shell.
 
 ## The Ambition: Assess the Entire Open Source Ecosystem
 
