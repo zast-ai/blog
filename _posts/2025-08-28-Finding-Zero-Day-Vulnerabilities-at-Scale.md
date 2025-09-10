@@ -1,5 +1,5 @@
 ---
-title: "Finding Zero-Day Vulnerabilities at Scale: Our Journey with <u>*[Zast.ai](https://blog.zast.ai/)*</u>"
+title: "Finding Zero-Day Vulnerabilities at Scale: Our Journey with Zast.ai"
 description: "Learn about our journey using Zast.ai to discover hundreds of zero-day vulnerabilities across the open-source ecosystem at scale, and the challenges we faced in responsibly disclosing them."
 author: "Chris"
 date: 2025-09-10
