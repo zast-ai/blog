@@ -47,7 +47,7 @@ Each vulnerability was verified with a working Proof of Concept (PoC) and a demo
 
 <center><img src="{{'/assets/img/Finding-Zero-Day-Vulnerabilities-at-Scale/vuldb.png' | relative_url }}" alt="vuldb" width="750" height="auto"></center>
 
-Following responsible disclosure practices, we are in the process of reporting these vulnerabilities through proper channels. For a complete list of vulnerabilities discovered by [Zast.ai](https://zast.ai/), that have completed the disclosure process, please see https://www.cve.org/CVERecord/SearchResults?query=zast.ai.
+Following responsible disclosure practices, we are in the process of reporting these vulnerabilities through proper channels. For a complete list of vulnerabilities discovered by [Zast.ai](https://zast.ai/){:target="_blank"}, that have completed the disclosure process, please see [https://www.cve.org/CVERecord/SearchResults?query=zast.ai](https://www.cve.org/CVERecord/SearchResults?query=zast.ai){:target="_blank"}.
 
 ## The Disclosure Journey: Triumphs and Tibulations
 
@@ -65,7 +65,7 @@ Disclosing these vulnerabilities responsibly was a complex and often arduous pro
 
 Despite these obstacles, these vulnerabilities are being publicly disclosed. We worked closely with project maintainers and security teams to ensure vulnerabilities were addressed promptly and transparently.
 
-One particularly illustrative example of these challenges is detailed in our separate blog post, "[Vulnerability Disclosure Challenges in Open Source Projects](https://blog.zast.ai/security/open%20source/vulnerability%20disclosure/Vulnerability-Disclosure-Challenges-in-Open-Source-Projects/)," which delves deep into the complexities of disclosing a critical vulnerability in a widely-used component.
+One particularly illustrative example of these challenges is detailed in our separate blog post, "[Vulnerability Disclosure Challenges in Open Source Projects](https://blog.zast.ai/security/open%20source/vulnerability%20disclosure/Vulnerability-Disclosure-Challenges-in-Open-Source-Projects/){:target="_blank"}," which delves deep into the complexities of disclosing a critical vulnerability in a widely-used component.
 
 ## Looking Forward: Building a More Secure Open Source Community
 
@@ -81,6 +81,6 @@ We envision a future where:
 
 We invite you to join us in this mission. Together, we can build a more secure digital world, one vulnerability at a time.
 
-Stay connected with us on [X @zast_ai](https://twitter.com/zast_ai).
+Stay connected with us on [X @zast_ai](https://twitter.com/zast_ai){:target="_blank"}.
 
 Let's make security as fast and efficient as AI-powered coding.
