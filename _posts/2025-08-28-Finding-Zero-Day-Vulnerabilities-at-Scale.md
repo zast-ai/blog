@@ -5,7 +5,7 @@ author: "Chris"
 date: 2025-09-10
 categories: [Security, AI, Open Source]
 tags: [Zero-Day, Vulnerability Disclosure, Zast.ai, Log4Shell, Automation, CVE]
-hidden: fasle
+hidden: false
 ---
 
 **Chris**,  
