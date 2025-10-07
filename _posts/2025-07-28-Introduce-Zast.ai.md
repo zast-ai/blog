@@ -1,7 +1,7 @@
 ---
-title: "A Shared Pursuit: Introducing Zast.ai"
-description: "Introducing Zast.ai - AI agent that can identify vulnerabilities, and verify exploitability with zero false positives. Join us in making software more secure."
-keywords: "Zast.ai, AI security, vulnerability detection, zero-day vulnerabilities, application security testing, automated security, code analysis, PoC generation, cybersecurity, software security"
+title: "A Shared Pursuit: Introducing ZAST.AI"
+description: "Introducing ZAST.AI - AI agent that can identify vulnerabilities, and verify exploitability with zero false positives. Join us in making software more secure."
+keywords: "ZAST.AI, AI security, vulnerability detection, zero-day vulnerabilities, application security testing, automated security, code analysis, PoC generation, cybersecurity, software security"
 author: "Geng Yang"
 date: 2025-07-29
 categories: ["Security", "AI", "Vulnerability Assessment"]
@@ -21,7 +21,7 @@ last_modified_at: 2025-07-29
 ---
 
 **Geng Yang**  
-Co-founder & CEO, Zast.ai  
+Co-founder & CEO, ZAST.AI  
 July 28, 2025, Seattle
 
 ---
@@ -39,7 +39,7 @@ We believe that security reports are cheap. Real impact requires proof. That's w
 
 ### Performance in the Real World
 
-During its development, Zast.ai uncovered hundreds of zero-day vulnerabilities. Beginning July 14th 2025, we've been submitting these discoveries to [VulDB.com](https://vuldb.com/), an accredited CVE Numbering Authority (CNA).
+During its development, ZAST.AI uncovered hundreds of zero-day vulnerabilities. Beginning July 14th 2025, we've been submitting these discoveries to [VulDB.com](https://vuldb.com/), an accredited CVE Numbering Authority (CNA).
 
 The results of the last ten days have been humbling and affirming:
 
@@ -47,11 +47,11 @@ The results of the last ten days have been humbling and affirming:
 
   ![Vulnerability submissions growth on VulDB.com]({{'/assets/img/vuldb/growth.png' | relative_url }})
 
-- This effort has made Zast.ai the **#1** global contributor to VulDB for the month of July, 2025.
+- This effort has made ZAST.AI the **#1** global contributor to VulDB for the month of July, 2025.
 
-  ![Zast.ai vulnerability submissions on VulDB.com]({{'/assets/img/vuldb/number1.png' | relative_url }})
+  ![ZAST.AI vulnerability submissions on VulDB.com]({{'/assets/img/vuldb/number1.png' | relative_url }})
 
-- In just over a week, Zast.ai has reached **#31** among all-time global contributors on [VulDB.com](https://vuldb.com/).
+- In just over a week, ZAST.AI has reached **#31** among all-time global contributors on [VulDB.com](https://vuldb.com/).
   The impact of these discoveries extends far beyond numbers. Our vulnerability findings span from critical infrastructure components to popular development tools, representing some of the most widely-used open source projects in the world.
 
   ![Star count distribution of affected repositories]({{'/assets/img/vuldb/starpie.png' | relative_url }})
@@ -62,7 +62,7 @@ We don't share these numbers to boast, but to offer as a proof of concept: that 
 
 ### How It Works: A Three-Step Process
 
-Zast.ai is designed to deliver proof, not just alerts:
+ZAST.AI is designed to deliver proof, not just alerts:
 
 1. **Candidate Generation:** It analyzes target code base to identify potential vulnerability "candidates."
 2. **Automated PoC Generation:** For each candidate, it generates and executes a tailored Proof of Concept against a test environment.
@@ -72,27 +72,27 @@ Zast.ai is designed to deliver proof, not just alerts:
 
 ### How to Get Started
 
-You can integrate Zast.ai into your workflow in minutes.
+You can integrate ZAST.AI into your workflow in minutes.
 
 1. Deploy your code in a test environment or start a local debug session.
-2. Visit [https://zast.ai](https://zast.ai) and follow the on-screen instructions to create an assessment task.
+2. Visit [https://ZAST.AI](https://zast.ai) and follow the on-screen instructions to create an assessment task.
 3. You'll receive an email notification when the assessment is completed.
 
 ---
 
 ### Current Limitations
 
-Although Zast.ai is continuously improving every day, here are its current limitations:
+Although ZAST.AI is continuously improving every day, here are its current limitations:
 
-- **Languages:** Zast.ai currently supports **Java** and **JavaScript/TypeScript**. Python is next in line (in beta test), and more languages are on our roadmap.
-- **Vulnerability Types:** Zast.ai is better with grammar-based vulnerabilities. For semantic ones, it currently supports **IDOR** and certain types of **information leakage**.
-- **Resource:** Zast.ai's GPU capacity is limited (we are a small start-up). If this blog generates significant demand for audits, we'll prioritize scaling our computational resources to meet your needs. If you find your job is in the queue, thank you for your patience.
+- **Languages:** ZAST.AI currently supports **Java** and **JavaScript/TypeScript**. Python is next in line (in beta test), and more languages are on our roadmap.
+- **Vulnerability Types:** ZAST.AI is better with grammar-based vulnerabilities. For semantic ones, it currently supports **IDOR** and certain types of **information leakage**.
+- **Resource:** ZAST.AI's GPU capacity is limited (we are a small start-up). If this blog generates significant demand for audits, we'll prioritize scaling our computational resources to meet your needs. If you find your job is in the queue, thank you for your patience.
 
 ---
 
 ### The Journey Ahead
 
-We don't have all the answers. We humbly offer Zast.ai —and its findings —as a starting point and a conversation starter. Our deepest hope is that by making Zast.ai accessible, we can inspire our fellow security engineers, researchers, and builders to make our digital world more secure.
+We don't have all the answers. We humbly offer ZAST.AI —and its findings —as a starting point and a conversation starter. Our deepest hope is that by making ZAST.AI accessible, we can inspire our fellow security engineers, researchers, and builders to make our digital world more secure.
 
 ---
 

@@ -10,6 +10,8 @@ variables:
 release_to_github:
   stage: release
   image: alpine:latest
+  tags:
+    - bj
   rules:
     - if: $CI_COMMIT_TAG
   before_script:
@@ -19,3 +21,4 @@ release_to_github:
   script:
       - chmod +x "${CI_PROJECT_DIR}/.gitlab/release.sh"
       - "${CI_PROJECT_DIR}/.gitlab/release.sh"
+  resource_group: production
