@@ -20,7 +20,7 @@ In our previous blog ***[Vulnerability Disclosure Challenges in Open Source Proj
 
 Our mission was ambitious: systematically assess thousands of open-source projects to uncover critical, previously unknown vulnerabilities. Inspired by the widespread impact of Log4Shell, we aimed to proactively identify similar threats before they could be exploited in the wild.
 
-<center><img src="{{'/assets/img/Finding-Zero-Day-Vulnerabilities-at-Scale/xkcd.png' | relative_url }}" alt="xkcd" width="750" height="auto"></center>
+<center><img src="{{'/assets/img/Finding-Zero-Day-Vulnerabilities-at-Scale/xkcd.png' | relative_url }}" alt="xkcd" width="400" height="auto"></center>
 
 <center><em>resource: https://xkcd.com/2347/</em></center>
 <br/>
