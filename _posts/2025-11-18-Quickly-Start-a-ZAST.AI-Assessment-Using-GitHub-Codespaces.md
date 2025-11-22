@@ -12,7 +12,9 @@ tags:
     "Vulnerability Assessment",
     "Cloud Development"
   ]
-
+# 📌 关键修改：添加 image 属性
+# 这个路径应该指向你的特色图片，且图片宽度应大于 1200 像素，以满足 Google 要求。
+image: /assets/img/Quickl-Start-a-ZAST.AI-Assessment-Using-GitHub-Codespaces/1.PNG
 
 ---
 
@@ -25,7 +27,7 @@ Nov. 18, 2025, Seattle
 
 [GitHub Codespaces](https://github.com/features/codespaces) is a cloud-driven development environment suitable for various development scenarios, whether it’s a long-term project or a short-term task like reviewing pull requests. Operators can use these environments from either Visual Studio Code or a web-based editor. With it, we can quickly start a project and set up an environment, saving significant time and costs associated with preparing machines, setting up environments, configuring domains, etc.
 
-<center><img src="{{'/assets/img/Quickl-Start-a-ZAST.AI-Assessment-Using-GitHub-Codespaces/1.PNG' | relative_url }}" alt="1" width="850" height="auto"></center>
+<center><img src="{{'/assets/img/Quickl-Start-a-ZAST.AI-Assessment-Using-GitHub-Codespaces/1.PNG' | relative_url }}" alt="1" width="1200" height="auto"></center>
 
 Today, we are going to illustrate how to use GitHub Codespaces to build projects online, compiling Java archive files and packaging into a Java archive file (war/jar), and submit the archive file to ZAST.AI for vulnerability assessing.
 
