@@ -82,7 +82,6 @@ We've seen too many companies constrained by strict data privacy standards when 
 
 This open-source foundation means you aren't "vendor-locked." You can now truly own your security tool.
 
-<center><img src="{{'/assets/img/Zero-False-Positives-&-Open-Source-ZAST-Express-Built-for-Your-IDE/Opensource.jpg' | relative_url }}" alt="Opensource" width="1200" height="auto"></center>
 
 ---
 
