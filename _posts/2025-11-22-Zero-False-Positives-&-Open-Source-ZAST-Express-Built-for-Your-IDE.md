@@ -93,7 +93,7 @@ With ZAST Express, you get the power of ZAST.AI's cutting-edge security capabili
 
 Give it a shot. You'll see we mean what we say.
 
-* **Install ZAST Express:** Search for "ZAST Express" in the Visual Studio Code Extension Marketplace, refer to [*A Practical Guide to ZAST Express*](https://zast.ai/document/zastExpress) for step-by-step help.
+* **Install ZAST Express:** Search for "ZAST Express" in the Visual Studio Code Extension Marketplace, refer to [*A Practical Guide to ZAST Express*](https://zast.ai/document/zastExpress) or [Video Guide](https://www.youtube.com/watch?v=EuZMmGljVB0&t=6s) for step-by-step help.
 * **Follow Us:** Check out our [GitHub repo](https://github.com/zast-ai/zast-extension) for the latest updates.
 
 We'll keep optimizing ZAST Express to make security assessments simpler and more accurate. 
