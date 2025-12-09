@@ -1,5 +1,5 @@
 ---
-title: "WordPress Plugin Stored XSS: ZAST.AI’s Zero-False-Positive Practice"
+title: "WordPress Plugin Stored XSS: ZAST.AI’s Zero False Positive Practice"
 description: "ZAST.AI's AI agent discovered critical Stored XSS vulnerabilities (CVE-2025-12020, CVE-2025-12025) in popular WordPress plugins. Learn about our zero-false-positive methodology and automated PoC verification."
 keywords: "WordPress Security, Stored XSS, ZAST.AI, AI Vulnerability Scanner, CVE-2025-12020, CVE-2025-12025, Automated PoC, Zero False Positive, Cybersecurity, Agentic AI"
 date: 2025-12-09
