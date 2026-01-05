@@ -1,5 +1,28 @@
-# The 2025 Bug Hunter Report: How ZAST.AI Uncovered 115+ Verified CVEs
-By ZAST.AI Research Team | January 2026
+---
+title: "The 2025 Bug Hunter Report: How ZAST.AI Uncovered 115+ Verified CVEs"
+description: "ZAST.AI's 2025 Annual Report: 115+ verified CVEs discovered in Azure SDK, Apache Struts2, and Nacos. See how our AI agent automates PoC validation for zero-day vulnerabilities."
+keywords: "ZAST.AI, CVE-2025, zero-day vulnerabilities, automated PoC, AI security agent, RCE, XXE, SSRF, Microsoft Azure SDK vulnerability, Apache Struts2 security, vulnerability research"
+date: 2026-1-5
+categories: ["Research", "Vulnerability Reports", "Cybersecurity"]
+tags:
+  [
+    "Zero-Day",
+    "CVE-2025",
+    "Automated PoC",
+    "AI Security",
+    "RCE",
+    "Supply Chain Security"
+  ]
+# 📌 添加：用于 SEO 和 Social Meta Tags
+author: ZAST.AI
+# 📌 用于生成 Schema 的 'image' 属性，必须包含一个特色图片的路径，这个路径应该指向你的特色图片，且图片宽度应大于 1200 像素，以满足 Google 要求。
+image: /assets/img/ZAST.AI-Raised-$6M-Pre-A/banner.png
+# 📌 添加：更长的摘要用于 social media 和 Schema 'description'
+excerpt: "2025 was a watershed year for ZAST.AI. Our AI agent moved beyond syntax checking to discover 115+ verified CVEs in major platforms like Microsoft Azure, Apache Struts2, and Alibaba Nacos. This report breaks down the 'Big Game' captures, Logic Vulnerabilities, and the rise of AI-driven Automated PoC validation."
+---
+
+
+
 
 2025 was a watershed year for ZAST.AI. While we recently announced our $6M Pre-A funding, the real story lies in the code.
 
