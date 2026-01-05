@@ -38,7 +38,7 @@ RCE is the highest severity vulnerability. In 2025, we uncovered multiple paths 
 
 ## 📊 4. 2025 Vulnerability Distribution Analysis
 Looking at the 115+ CVEs we secured, here is the breakdown of the vulnerability landscape we mapped:
-*(建议此处插入饼图 - 我们可以为您生成图表数据)*
+*(img)*
 - **Input Validation & XSS (40%)**: Still the most common web flaw. Found extensively in PyBBS, CacheCloud, mblog, and WordPress Plugins.
 - **Authorization & Logic (20%)**: IDOR, Privilege Escalation, and Bypass (e.g., JeeSite XSS filter bypass).
 - **Server-Side Risks (25%)**: SSRF, XXE, and Insecure File Upload (e.g., node-formidable, CodiMD).
@@ -50,6 +50,7 @@ Looking at the 115+ CVEs we secured, here is the breakdown of the vulnerability 
 Below is a curated list of confirmed vulnerabilities and CVEs discovered by ZAST.AI in 2025.
 
 ### Critical Frameworks & Middleware
+
 | Component | Vulnerability | CVE / Status |
 |-----------|---------------|--------------|
 | Microsoft Azure SDK | XXE | Confirmed |
@@ -60,6 +61,7 @@ Below is a curated list of confirmed vulnerabilities and CVEs discovered by ZAST
 | Langfuse | SSRF | CVE-2025-9799 |
 
 ### Enterprise Applications & CMS
+
 | Component | Vulnerability | CVE / Status |
 |-----------|---------------|--------------|
 | JeeSite | SSRF, Open Redirect, File Upload | CVE-2025-7759, 7864, etc. |
@@ -69,6 +71,7 @@ Below is a curated list of confirmed vulnerabilities and CVEs discovered by ZAST
 | PyBBS | XSS, CSRF, Logic Flaws | CVE-2025-8550 to 8814 |
 
 ### WordPress Ecosystem
+
 | Plugin | Vulnerability | CVE / Status |
 |--------|---------------|--------------|
 | Double the Donation | Stored XSS | CVE-2025-12020 |
