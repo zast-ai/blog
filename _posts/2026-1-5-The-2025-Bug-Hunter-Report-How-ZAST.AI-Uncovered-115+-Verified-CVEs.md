@@ -1,17 +1,21 @@
 ---
-title: "The 2025 Bug Hunter Report: How ZAST.AI Uncovered 115+ Verified CVEs"
-description: "ZAST.AI's 2025 Annual Report: 115+ verified CVEs discovered in Azure SDK, Apache Struts2, and Nacos. See how our AI agent automates PoC validation for zero-day vulnerabilities."
-keywords: "ZAST.AI, CVE-2025, zero-day vulnerabilities, automated PoC, AI security agent, RCE, XXE, SSRF, Microsoft Azure SDK vulnerability, Apache Struts2 security, vulnerability research"
-date: 2026-1-5
-categories: ["Research", "Vulnerability Reports", "Cybersecurity"]
+title: "ZAST.AI 2025 Annual Report: 153 Verified Vulnerabilities & 0 False Positives"
+description: "Discover how ZAST.AI's autonomous agents uncovered 153 verified zero-day vulnerabilities (119 CVEs) with zero false positives in 2025. This report analyzes critical RCE, XXE, and SSRF findings in Azure, Apache, and Nacos, demonstrating the shift from traditional SAST to automated PoC verification."
+keywords: "AI Application Security, Zero False Positives, Automated PoC, Vulnerability Discovery, SAST Alternative, CVE Analysis, Zero-Day Research, RCE, XXE, SSRF, Java Security, ZAST.AI"
+date: 2026-01-05
+categories: ["Vulnerability Research", "Annual Reports", "AI Security"]
 tags:
   [
-    "Zero-Day",
-    "CVE-2025",
-    "Automated PoC",
-    "AI Security",
+    "CVE",
+    "Open Source Security",
+    "Azure SDK",
+    "Apache Struts",
+    "Alibaba Nacos",
+    "Logic Vulnerability",
+    "Automated Verification",
     "RCE",
-    "Supply Chain Security"
+    "XXE",
+    "SSRF"
   ]
 # 📌 添加：用于 SEO 和 Social Meta Tags
 author: ZAST.AI
@@ -21,94 +25,131 @@ image: /assets/img/ZAST.AI-Raised-$6M-Pre-A/banner.png
 excerpt: "2025 was a watershed year for ZAST.AI. Our AI agent moved beyond syntax checking to discover 115+ verified CVEs in major platforms like Microsoft Azure, Apache Struts2, and Alibaba Nacos. This report breaks down the 'Big Game' captures, Logic Vulnerabilities, and the rise of AI-driven Automated PoC validation."
 ---
 
+**TL;DR** — In 2025, [ZAST.AI](https://zast.ai) uncovered 400+ zero-day vulnerabilities in multiple popular open-source projects, and Publicly Disclosed 153 security vulnerabilities (119 assigned CVE IDs) across 37 open-source projects, representing only the subset of findings that have completed the disclosure process. The scope covers enterprise SDKs, frameworks, and critical infrastructure.
 
+**Key Differentiator**: Unlike traditional SAST, [ZAST.AI](https://zast.ai) enforces a Zero False Positive policy by generating autonomous, executable PoCs for every reported finding.
 
+## 1. 2025 Metrics Overview
 
-2025 was a watershed year for ZAST.AI. While we recently announced our $6M Pre-A funding, the real story lies in the code.
+| Metric | Count / Value |
+|--------|---------------|
+| Total Vulnerabilities Publicly Disclosed | 153 |
+| CVE IDs Assigned | 119 |
+| Projects Affected | 37 |
+| False Positive Rate | 0 (PoC Validated) |
+| Key Ecosystems | Enterprise SDKs (Azure, Alibaba), Apache, Node.Formidable, WordPress, Koa, Langfuse |
 
-Behind the scenes, our AI-powered agent was working 24/7—scanning, analyzing, and proving vulnerabilities. We didn’t just look for syntax errors; we hunted for exploitable realities.
+## 2. Analysis of Core Vulnerability Types 
 
-The result? 400+ zero-day vulnerabilities discovered, with 115 official CVEs assigned.
+The 153 discoveries highlight structural limitations in pattern-matching based SAST. We categorize these into 5 structural blind spots where semantic analysis outperforms syntactic scanning.
 
-This report breaks down our findings from 2025, categorizing them by impact and technology stack. It serves as both a transparency report and a testament to the power of Automated PoC Validation.
+### Group 1: Object Lifecycle & State Tracking (XXE)
 
-## 🏆 1. The "Big Game" Hunters: Enterprise Infrastructure
-Our most significant achievements weren't just in small plugins, but in the foundational frameworks that power the global internet. Finding vulnerabilities here requires deep semantic understanding of complex codebases.
-- **Microsoft Azure SDK (XXE)**: XML External Entity vulnerability in a core cloud SDK.
-- **Apache Struts2 (XXE)**: A critical flaw in one of the world's most popular Java frameworks (Confirmed).
-- **Alibaba Nacos (XXE)**: Vulnerability in the dynamic service discovery/configuration platform used by microservices everywhere.
-- **Apache Commons Configuration (RCE)**: Remote Code Execution flaws in a ubiquitous Java library.
+- **Targets**: Azure SDK for Java, Alibaba Nacos, Apache Struts2 XWork-Core
+- **Type**: XXE (XML External Entity Injection)
+- **Pattern**: Separation of Configuration and Execution
 
-Why this matters: These are "Supply Chain" risks. A single flaw here ripples through thousands of enterprise applications. Our agent identified these before they could be weaponized.
+In all three frameworks, the vulnerable state is established during object initialization (Constructor or Static Method) but triggered in subsequent method calls, often separated by file boundaries.
+- **Azure SDK**: Constructor initializes `JAXBContext` without disabling external entities; the state persists to `unmarshalEntry`.
+- **Alibaba Nacos**: `DefaultXmlConfigParse` instantiates a `DocumentBuilderFactory` field without security features, reusing it across all `parse()` calls.
+- **Apache Struts2 (XWork)**: `DomHelper.parse` configures `setValidating` but omits `setFeature` for external entities.
 
-## 🧠 2. Beyond Syntax: Logic & Semantic Vulnerabilities
-Traditional Static Analysis (SAST) tools often miss bugs that require understanding "how the app works." In 2025, ZAST.AI demonstrated its ability to understand business logic.
+**Detection Logic**: [ZAST.AI](https://zast.ai) models the Object Lifecycle, tracking the "Unsafe Configuration" state from initialization to the execution sink, identifying the parser object itself as tainted.
 
-### IDOR (Insecure Direct Object References)
-- **Target**: jshERP <=3.5
-- **Impact**: CVE-2025-7948 (Change Password), CVE-2025-7947 (Delete Account).
-- **The Win**: The AI understood the relationship between user IDs and permissions, generating a PoC to hijack accounts—something regex-based tools simply cannot do.
+### Group 2: Dependency Chain Analysis (RCE)
 
-### SSRF (Server-Side Request Forgery)
-- **Targets**: Langfuse (LLM Engineering Platform), JeeSite, stirling-pdf, xxl-job.
-- **The Win**: SSRF is notoriously hard to validate. Our agent successfully manipulated internal network requests in these platforms (e.g., CVE-2025-9799 in Langfuse), proving the risk of cloud metadata exposure.
+- **Target**: Apache Commons Configuration v1 & v2
+- **Type**: RCE (Remote Code Execution)
+- **Pattern**: Polymorphic execution paths across library boundaries
 
-## 💣 3. The "Crown Jewels": Remote Code Execution (RCE)
-RCE is the highest severity vulnerability. In 2025, we uncovered multiple paths to total system compromise.
-- **ChanCMS**: Multiple RCEs (CVE-2025-8266, CVE-2025-8227).
-- **sim**: RCE via insecure handling (CVE-2025-10097).
-- **Apache Commons**: As mentioned above.
+The vulnerability relies on a chain spanning user input, the configuration library, and a deep dependency (`commons-jxpath`).
 
-## 📊 4. 2025 Vulnerability Distribution Analysis
-Looking at the 115+ CVEs we secured, here is the breakdown of the vulnerability landscape we mapped:
-*(img)*
-- **Input Validation & XSS (40%)**: Still the most common web flaw. Found extensively in PyBBS, CacheCloud, mblog, and WordPress Plugins.
-- **Authorization & Logic (20%)**: IDOR, Privilege Escalation, and Bypass (e.g., JeeSite XSS filter bypass).
-- **Server-Side Risks (25%)**: SSRF, XXE, and Insecure File Upload (e.g., node-formidable, CodiMD).
-- **Injection (15%)**: SQL Injection (e.g., deer-wms-2, platform).
+**Attack Chain**:
+User Input → `Configuration.query()` → `JXPathContext.selectNodes()` → Reflection → `Runtime.exec()`
 
-**Trend Alert**: We noticed a surge in SSRF vulnerabilities in modern microservices and AI-ops platforms (like Langfuse and xxl-job), highlighting the risks in modern cloud-native architectures.
+**Detection Logic**: Traditional tools often stop analysis at library boundaries. [ZAST.AI](https://zast.ai) treats dependency source code as part of the semantic graph, tracing taint flow from the query argument directly into JXPath's internal reflection logic.
 
-## 📜 Appendix: Selected 2025 CVE List
-Below is a curated list of confirmed vulnerabilities and CVEs discovered by ZAST.AI in 2025.
+### Group 3: Asynchronous Taint Tracking (SSRF)
 
-### Critical Frameworks & Middleware
+- **Target**: Langfuse
+- **Type**: SSRF via Message Queue
+- **Pattern**: Taint propagation across process/storage boundaries
 
-| Component | Vulnerability | CVE / Status |
-|-----------|---------------|--------------|
-| Microsoft Azure SDK | XXE | Confirmed |
-| Apache Struts2 | XXE | Confirmed |
-| Alibaba Nacos | XXE | Confirmed |
-| node-formidable | Insecure File Upload | CVE-2025-46653 |
-| Koa | Open Redirect | CVE-2025-8129 |
-| Langfuse | SSRF | CVE-2025-9799 |
+This involves a "Delayed Trigger" where data is persisted and processed asynchronously.
 
-### Enterprise Applications & CMS
+**Flow**:
+API Service: User input (`url`) → Persisted to PostgreSQL → Message Queue: Event triggers Redis/BullMQ task → Worker Service: Reads `url` from DB → Executes `fetch(url)`.
 
-| Component | Vulnerability | CVE / Status |
-|-----------|---------------|--------------|
-| JeeSite | SSRF, Open Redirect, File Upload | CVE-2025-7759, 7864, etc. |
-| xxl-job | RCE, SSRF | CVE-2025-7788, 7787 |
-| CacheCloud | Reflected XSS (Multiple) | CVE-2025-15145 to 15221 |
-| deer-wms-2 | SQL Injection (Multiple) | CVE-2025-8123 to 8127 |
-| PyBBS | XSS, CSRF, Logic Flaws | CVE-2025-8550 to 8814 |
+**Detection Logic**: [ZAST.AI](https://zast.ai) models databases and queues as propagation pipes, correlating the API input source with the Worker execution sink across the asynchronous boundary.
 
-### WordPress Ecosystem
+### Group 4: Semantic Gap in Verification (File Upload)
 
-| Plugin | Vulnerability | CVE / Status |
-|--------|---------------|--------------|
-| Double the Donation | Stored XSS | CVE-2025-12020 |
-| YouTube Subscribe | Stored XSS | CVE-2025-12025 |
-| Featured Image | Stored XSS | CVE-2025-12019 |
+- **Target**: Enable WebP (WordPress Plugin)
+- **Type**: Arbitrary File Upload to RCE
+- **Pattern**: Flawed Verification Logic (Substring vs. Extension)
 
-*(Note: This is a partial list. For the full vulnerability database, please contact our research team.)*
+The plugin attempts to validate file types using `strpos`:
 
-## The ZAST.AI Difference
-Every CVE listed above came with a Proof-of-Concept (PoC). We didn't send these vendors a "maybe"; we sent them a "here is how it breaks."
+```php
+// Vulnerable Code
+if ( false !== strpos( $filename, '.webp' ) ) {
+    $types['ext'] = 'webp';
+}
+```
 
-This level of validation is why Microsoft, Apache, and Alibaba prioritized our reports. In 2026, we are scaling this capability to cover more languages and deeper logic.
+A file named `shell.webp.php` passes because it contains `.webp`, despite executing as PHP.
 
-Want to see the agent that found these bugs?  
-[Schedule a Demo](support@zast.ai)
+**Detection Logic**: A traditional scanner marks this safe due to the presence of a check (Code Compliance). [ZAST.AI](https://zast.ai) identified the semantic gap between the security requirement ("Ends With") and the implementation ("Contains"), automatically generating a polyglot filename to verify the bypass.
 
----
+### Group 5: Context-Aware Escaping (Stored XSS)
+
+- **Primary Target**: Double the Donation (WordPress Plugin)
+- **Type**: Stored XSS via Admin Settings
+- **Pattern**: Insecure Data Context Injection
+
+The plugin injects a stored API key directly into a JavaScript object without context-appropriate escaping (`esc_js`):
+
+```php
+// Vulnerable Code in Double the Donation
+return '<script>var DDCONF = { API_KEY: "' . $current_key . '" };</script>';
+```
+
+**Payload**: `", x: alert(1), dummy: "` breaks the JSON structure and executes arbitrary JS.
+
+**Broader Impact**: [ZAST.AI](https://zast.ai) identified and verified similar Context-Aware XSS patterns in the following plugins:
+- YouTube Subscribe
+- Featured Image
+- MembershipWorks
+
+**Detection Logic**: [ZAST.AI](https://zast.ai) recognized the data flow into a `<script>` block context, determining that standard HTML escaping was insufficient for the JavaScript execution context.
+
+## 3. Methodology: Achieving Zero False Positives
+
+The zero false positive rate is achieved through **Autonomous Verification**, not heuristic filtering.
+
+### Comparison of Methodologies
+
+| Feature | Pattern Matching (Legacy) | Semantic Analysis + Verification ([ZAST.AI](https://zast.ai)) |
+|---------|---------------------------|-----------------------------------------|
+| Scope | Cross File / Function | Cross-File / Cross-Library / Object Lifecycle |
+| Taint Analysis | Linear / Synchronous | Async / Persisted / Multi-process |
+| Validation | Manual Review Required | Automated Executable PoC |
+| Output | "Potential Vulnerability" | "Verified Exploit" |
+
+### Verification Workflow
+
+1. **Identification**: Semantic engine identifies potential exploit path.
+2. **Constraint Solving**: AI generates input data to navigate complex execution paths.
+3. **Execution**: PoC runs in a sandboxed environment.
+4. **Confirmation**: Vulnerability is reported only if specific success criteria (e.g., file creation, network callback) are met.
+
+## 4. Conclusion
+
+The 2025 data (400+ findings, 0 False Positive) indicates that static analysis effectiveness depends on contextual depth and verification capability. As modern architectures leverage deep dependency trees and asynchronous patterns, security tooling must evolve from syntactic pattern matching to semantic execution modeling.
+
+## Resources
+
+- [Vulnerability Details](https://github.com/zast-ai/vulnerability-reports/tree/main)
+- [Technical Blog](https://blog.zast.ai/)
+
+**Disclaimer**: All vulnerabilities listed have been responsibly disclosed and remediated.
