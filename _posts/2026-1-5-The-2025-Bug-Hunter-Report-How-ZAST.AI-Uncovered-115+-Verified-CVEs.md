@@ -25,7 +25,7 @@ image: /assets/img/ZAST.AI-Raised-$6M-Pre-A/banner.png
 excerpt: "2025 was a watershed year for ZAST.AI. Our AI agent moved beyond syntax checking to discover 115+ verified CVEs in major platforms like Microsoft Azure, Apache Struts2, and Alibaba Nacos. This report breaks down the 'Big Game' captures, Logic Vulnerabilities, and the rise of AI-driven Automated PoC validation."
 ---
 
-**TL;DR** — In 2025, [ZAST.AI](https://zast.ai) uncovered 400+ zero-day vulnerabilities in multiple popular open-source projects, and Publicly Disclosed 153 security vulnerabilities (119 assigned CVE IDs) across 37 open-source projects, representing only the subset of findings that have completed the disclosure process. The scope covers enterprise SDKs, frameworks, and critical infrastructure.
+**TL;DR** — In 2025, ZAST.AI publicly disclosed 153 security vulnerabilities (119 assigned CVE IDs) across 37 open-source projects, representing only the subset of findings that have completed the disclosure process. The scope covers enterprise SDKs, frameworks, and critical infrastructure.
 
 **Key Differentiator**: Unlike traditional SAST, [ZAST.AI](https://zast.ai) enforces a Zero False Positive policy by generating autonomous, executable PoCs for every reported finding.
 
@@ -145,7 +145,7 @@ The zero false positive rate is achieved through **Autonomous Verification**, no
 
 ## 4. Conclusion
 
-The 2025 data (400+ findings, 0 False Positive) indicates that static analysis effectiveness depends on contextual depth and verification capability. As modern architectures leverage deep dependency trees and asynchronous patterns, security tooling must evolve from syntactic pattern matching to semantic execution modeling.
+The 2025 data (153 findings, 0 False Positive) indicates that static analysis effectiveness depends on contextual depth and verification capability. As modern architectures leverage deep dependency trees and asynchronous patterns, security tooling must evolve from syntactic pattern matching to semantic execution modeling.
 
 ## Resources
 
