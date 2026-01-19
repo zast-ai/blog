@@ -90,12 +90,12 @@ baidu_site_verification:
 
 # Social Sharing
 twitter:
-  username:
+  username: zast_ai
 facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: /assets/img/logo-single.png # 在这里添加默认分享图路径
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
