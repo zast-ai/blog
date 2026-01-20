@@ -3,7 +3,7 @@ title: "ZAST.AI 2025 Annual Report: 153 Verified Vulnerabilities & 0 False Posit
 description: "Discover how ZAST.AI's autonomous agents uncovered 153 verified zero-day vulnerabilities (119 CVEs) with zero false positives in 2025. This report analyzes critical RCE, XXE, and SSRF findings in Azure, Apache, and Nacos, demonstrating the shift from traditional SAST to automated PoC verification."
 keywords: "AI Application Security, Zero False Positives, Automated PoC, Vulnerability Discovery, SAST Alternative, CVE Analysis, Zero-Day Research, RCE, XXE, SSRF, Java Security, ZAST.AI"
 date: 2026-01-05
-categories: ["Vulnerability Research", "Annual Reports", "AI Security"]
+categories: ["Research", "Vulnerability Reports", "Cybersecurity"]
 tags:
   [
     "CVE",
@@ -30,6 +30,7 @@ excerpt: "2025 was a watershed year for ZAST.AI. Our AI agent moved beyond synta
 **Key Differentiator**: Unlike traditional SAST, [ZAST.AI](https://zast.ai) enforces a Zero False Positive policy by generating autonomous, executable PoCs for every reported finding.
 
 ## 1. 2025 Metrics Overview
+
 | Metric | Count / Value |
 |--------|---------------|
 | Total Vulnerabilities Publicly Disclosed | 153 |
