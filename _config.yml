@@ -95,7 +95,7 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: /assets/img/logo-single.png # 在这里添加默认分享图路径
+og_image: /assets/img/logo.png # 在这里添加默认分享图路径
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
