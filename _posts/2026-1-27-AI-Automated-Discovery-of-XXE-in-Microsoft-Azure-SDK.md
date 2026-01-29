@@ -38,6 +38,8 @@ During an automated assessment of Microsoft’s open-source ecosystem, [ZAST.AI]
 2. **Remediation**: Since the affected component was inactive legacy code, Microsoft removed the code entirely from the repository.
 3. **Acknowledgment**: No CVE ID was assigned (due to code removal), but [ZAST.AI](https://zast.ai) received official credit in Microsoft’s Online Service Acknowledgement Portal.
 
+<center><img src="{{'/assets/img/AI-Automated-Discovery-of-XXE-in-Microsoft-Azure-SDK/01.png' | relative_url }}" alt="01" width="1200" height="auto"></center>
+<br>
 
 ## Technical Deep Dive
 ### Root Cause Analysis
