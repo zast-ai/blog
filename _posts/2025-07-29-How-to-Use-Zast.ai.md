@@ -1,8 +1,8 @@
 ---
-title: "How to Use Zast.ai"
-description: "Complete step-by-step guide on how to use Zast.ai for vulnerability assessment. Learn how to upload code, verify ownership, add test accounts, and get detailed security reports with zero false positives."
-keywords: "Zast.ai tutorial, vulnerability assessment guide, security testing, code upload, ownership verification, test accounts, security reports, AI security, automated vulnerability detection"
-author: "Zast.ai Team"
+title: "How to Use ZAST.AI"
+description: "Complete step-by-step guide on how to use ZAST.AI for vulnerability assessment. Learn how to upload code, verify ownership, add test accounts, and get detailed security reports with zero false positives."
+keywords: "ZAST.AI tutorial, vulnerability assessment guide, security testing, code upload, ownership verification, test accounts, security reports, AI security, automated vulnerability detection"
+author: ZAST.AI Team"
 date: 2025-07-29
 categories: ["Tutorial", "Security", "AI"]
 tags: ["vulnerability assessment", "AI security", "cybersecurity"]
@@ -11,7 +11,7 @@ header:
 last_modified_at: 2025-07-29
 ---
 
-**Zast.ai Team**,  
+**ZAST.AI Team**,  
 
 July 29, 2025, Seattle
 

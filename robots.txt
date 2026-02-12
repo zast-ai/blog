@@ -2,6 +2,9 @@
 layout: null
 sitemap: false
 ---
+User-agent: *
+Disallow: /
+
 User-agent: anthropic-ai
 Disallow: /
 
@@ -23,6 +26,12 @@ Disallow: /
 User-agent: cohere-ai
 Disallow: /
 
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
 User-agent: GPTBot
 Disallow: /
 
@@ -34,6 +43,3 @@ Disallow: /
 
 User-agent: Omgilibot
 Disallow: /
-
-User-agent: *
-Allow: /

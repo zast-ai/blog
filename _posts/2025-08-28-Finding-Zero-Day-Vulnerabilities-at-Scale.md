@@ -1,15 +1,15 @@
 ---
-title: "Finding Zero-Day Vulnerabilities at Scale: Our Journey with Zast.ai"
-description: "Learn about our journey using Zast.ai to discover hundreds of zero-day vulnerabilities across the open-source ecosystem at scale, and the challenges we faced in responsibly disclosing them."
+title: "Finding Zero-Day Vulnerabilities at Scale: Our Journey with ZAST.AI"
+description: "Learn about our journey using ZAST.AI to discover hundreds of zero-day vulnerabilities across the open-source ecosystem at scale, and the challenges we faced in responsibly disclosing them."
 author: "Chris"
 date: 2025-09-10
 categories: [Security, AI, Open Source]
-tags: [Zero-Day, Vulnerability Disclosure, Zast.ai, Log4Shell, Automation, CVE]
+tags: [Zero-Day, Vulnerability Disclosure, ZAST.AI, Log4Shell, Automation, CVE]
 hidden: false
 ---
 
 **Chris**,  
-Co-founder, Zast.ai  
+Co-founder, ZAST.AI  
 Sep. 10, 2025, Toronto
 
 ---
@@ -25,7 +25,7 @@ Our mission was ambitious: systematically assess thousands of open-source projec
 <center><em>resource: https://xkcd.com/2347/</em></center>
 <br/>
 
-To achieve this, we developed a comprehensive automation pipeline leveraging Zast.ai's capabilities:<br>
+To achieve this, we developed a comprehensive automation pipeline leveraging ZAST.AI's capabilities:<br>
 
 <center><img src="{{'/assets/img/Finding-Zero-Day-Vulnerabilities-at-Scale/b2-1.png' | relative_url }}" alt="b2-1" width="750" height="auto"></center>
 
@@ -35,19 +35,19 @@ To achieve this, we developed a comprehensive automation pipeline leveraging Zas
 
 3. **Deployment Automation**: One of the biggest challenges was automatically deploying diverse projects with varying dependencies and configurations.
 
-4. **Assessment with Zast.ai**: Each deployed project was assessed using Zast.ai to identify potential vulnerabilities.
+4. **Assessment with ZAST.AI**: Each deployed project was assessed using Zast.ai to identify potential vulnerabilities.
 
 5. **Result Aggregation**: Findings from individual assessments were collected and consolidated into comprehensive reports.
 
 ## Discovering Hundreds of Zero-Day Vulnerabilities
 
-Through our systematic approach and the power of Zast.ai, we successfully identified hundreds of zero-day vulnerabilities across a wide range of open-source projects. These findings included critical issues in popular libraries, frameworks, and tools that are integral to modern software development.
+Through our systematic approach and the power of ZAST.AI, we successfully identified hundreds of zero-day vulnerabilities across a wide range of open-source projects. These findings included critical issues in popular libraries, frameworks, and tools that are integral to modern software development.
 
 Each vulnerability was verified with a working Proof of Concept (PoC) and a demonstrated exploit, ensuring the accuracy and impact of our discoveries.
 
 <center><img src="{{'/assets/img/Finding-Zero-Day-Vulnerabilities-at-Scale/vuldb.png' | relative_url }}" alt="vuldb" width="750" height="auto"></center>
 
-Following responsible disclosure practices, we are in the process of reporting these vulnerabilities through proper channels. For a complete list of vulnerabilities discovered by [Zast.ai](https://zast.ai/){:target="_blank"}, that have completed the disclosure process, please see [https://www.cve.org/CVERecord/SearchResults?query=zast.ai](https://www.cve.org/CVERecord/SearchResults?query=zast.ai){:target="_blank"}.
+Following responsible disclosure practices, we are in the process of reporting these vulnerabilities through proper channels. For a complete list of vulnerabilities discovered by [ZAST.AI](https://zast.ai/){:target="_blank"}, that have completed the disclosure process, please see [https://www.cve.org/CVERecord/SearchResults?query=zast.ai](https://www.cve.org/CVERecord/SearchResults?query=zast.ai){:target="_blank"}.
 
 ## The Disclosure Journey: Triumphs and Tibulations
 
@@ -69,7 +69,7 @@ One particularly illustrative example of these challenges is detailed in our sep
 
 ## Looking Forward: Building a More Secure Open Source Community
 
-Our journey with Zast.ai has been both challenging and rewarding. Through automation and collaboration, we've taken significant steps toward proactively securing the open-source ecosystem. However, this is just the beginning.
+Our journey with ZAST.AI has been both challenging and rewarding. Through automation and collaboration, we've taken significant steps toward proactively securing the open-source ecosystem. However, this is just the beginning.
 
 We envision a future where:
 

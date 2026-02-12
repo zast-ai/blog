@@ -19,3 +19,4 @@ release_to_github:
   script:
       - chmod +x "${CI_PROJECT_DIR}/.gitlab/release.sh"
       - "${CI_PROJECT_DIR}/.gitlab/release.sh"
+  resource_group: production
