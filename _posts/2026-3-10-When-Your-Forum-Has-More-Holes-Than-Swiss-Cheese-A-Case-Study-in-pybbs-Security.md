@@ -90,7 +90,7 @@ If the form submission deletes user 15, the vulnerability is confirmed. No false
 
 ## The Zero False Positive Angle
 
-I've sat through enough triage meetings where security teams spend hours validating SAST output. Half the findings are unexploitable. Some are in dead code. Others are blocked by frameworks doing the right thing silently.
+We've sat through enough triage meetings where security teams spend hours validating SAST output. Half the findings are unexploitable. Some are in dead code. Others are blocked by frameworks doing the right thing silently.
 
 The pybbs findings didn't need triage. Each vulnerability came with a working PoC and evidence of successful exploitation. The stored XSS report included screenshots of alert boxes firing. The CSRF reports showed before/after states of the user list. The CAPTCHA reuse finding documented the step-by-step brute-force sequence.
 
