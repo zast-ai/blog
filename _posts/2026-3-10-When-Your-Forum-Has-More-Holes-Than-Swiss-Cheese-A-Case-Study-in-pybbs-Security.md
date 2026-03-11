@@ -2,7 +2,7 @@
 title: "When Your Forum Has More Holes Than Swiss Cheese: A Case Study in pybbs Security"
 description: "A deep dive into 14 vulnerabilities found in pybbs v6.0.0, ranging from reflected XSS to logic flaws. Learn why traditional SAST fails where semantic analysis succeeds."
 keywords: "pybbs vulnerability, XSS, SAST vs DAST, logic flaws, ZAST.AI, cybersecurity case study, automated pentesting"
-date: 2026-03-11 08:00:00 +0800  # 明确指定北京时间
+date: 2026-03-11
 categories: ["Cybersecurity", "Product Updates"]
 tags:
   [
