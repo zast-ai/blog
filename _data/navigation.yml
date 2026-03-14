@@ -1,0 +1,10 @@
+# main links
+main:
+  # - title: "User Manual"
+  #   url: /docs/user-manual/
+  # - title: "About"
+  #   url: /about/
+  - title: "Posts"
+    url: /
+  # - title: "Terms Of Service"
+  #   url: /terms/

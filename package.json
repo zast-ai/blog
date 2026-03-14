@@ -1,0 +1,11 @@
+{
+  "name": "zast-docs",
+  "private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
