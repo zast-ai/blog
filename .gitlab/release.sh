@@ -5,7 +5,7 @@ set -e
 # Configuration
 GITHUB_REPO="zast-ai/blog"
 GITHUB_BRANCH="release"
-CURRENT_TAG="$CI_COMMIT_TAG"
+CURRENT_TAG="${RELEASE_TAG:-$CI_COMMIT_TAG}"
 GITHUB_REMOTE="github"
 TEMP_DIR=""
 
@@ -19,6 +19,47 @@ trap cleanup EXIT
 generate_commit_message() {
     local tag="$1"
     echo "Release $tag"
+}
+
+resolve_gitlab_auth_header() {
+    if [[ -n "$GITLAB_API_TOKEN" ]]; then
+        echo "PRIVATE-TOKEN: $GITLAB_API_TOKEN"
+    else
+        echo ""
+    fi
+}
+
+resolve_latest_verified_tag() {
+    local auth_header
+    local pipelines_url
+    local response
+    local resolved_tag
+
+    auth_header=$(resolve_gitlab_auth_header)
+
+    if [[ -z "$auth_header" || -z "$CI_API_V4_URL" || -z "$CI_PROJECT_ID" ]]; then
+        echo "❌ Error: RELEASE_TAG/CI_COMMIT_TAG is not set and GitLab API credentials are unavailable"
+        echo "💡 Set RELEASE_TAG for manual publish, or configure GITLAB_API_TOKEN with read_api scope for scheduled publish"
+        exit 1
+    fi
+
+    pipelines_url="${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/pipelines?scope=tags&status=success&order_by=updated_at&sort=desc&per_page=20"
+
+    echo "🔎 Resolving latest verified tag from GitLab..."
+    response=$(curl --silent --show-error --fail --header "$auth_header" "$pipelines_url") || {
+        echo "❌ Error: Failed to query GitLab pipelines API"
+        echo "💡 GITLAB_API_TOKEN must be a project/group/personal access token with read_api scope"
+        echo "💡 CI_JOB_TOKEN is not sufficient here on many GitLab installations and often returns 404 for private projects"
+        exit 1
+    }
+    resolved_tag=$(printf '%s' "$response" | jq -r 'map(select(.ref != null)) | .[0].ref // empty')
+
+    if [[ -z "$resolved_tag" ]]; then
+        echo "❌ Error: Could not find a successful tag pipeline to publish"
+        exit 1
+    fi
+
+    CURRENT_TAG="$resolved_tag"
 }
 
 prepare_github_remote() {
@@ -109,7 +150,16 @@ push_release_branch() {
     fi
 }
 
-echo "🚀 Starting release process for tag: $CURRENT_TAG"
+echo "🚀 Starting release process"
+
+if [[ -z "$CURRENT_TAG" ]]; then
+    resolve_latest_verified_tag
+fi
+
+echo "📌 Selected tag for publish: $CURRENT_TAG"
+
+echo "Fetching all tags and references..."
+git fetch --all --tags || echo "Warning: Could not fetch from remote (may be running locally)"
 
 if ! git rev-parse "$CURRENT_TAG" >/dev/null 2>&1; then
     echo "❌ Error: Tag '$CURRENT_TAG' does not exist"
@@ -130,9 +180,6 @@ if [[ -z "$GITHUB_TOKEN" ]]; then
 fi
 
 FULL_COMMIT_MESSAGE=$(generate_commit_message "$CURRENT_TAG")
-
-echo "Fetching all tags and references..."
-git fetch --all --tags || echo "Warning: Could not fetch from remote (may be running locally)"
 
 prepare_github_remote
 create_release_repo
