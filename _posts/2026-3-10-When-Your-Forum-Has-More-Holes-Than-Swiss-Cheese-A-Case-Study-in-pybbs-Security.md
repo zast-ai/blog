@@ -12,11 +12,8 @@ tags:
     "LLM in Security",
     "Zero False Positives"
   ]
-# 📌 SEO and Social Meta Tags
 author: ZAST.AI
-# 📌 Feature Image (Ensure path is correct for your Jekyll setup)
 image: /assets/img/ZAST.AI-Raised-$6M-Pre-A/banner.png
-# 📌 Excerpt for social media and Schema 'description'
 excerpt: "ZAST.AI recently flagged 14 vulnerabilities in pybbs. From CAPTCHA reuse to stored XSS, this case study explores the gap between pattern-matching SAST and intelligent, verified security analysis."
 ---
 

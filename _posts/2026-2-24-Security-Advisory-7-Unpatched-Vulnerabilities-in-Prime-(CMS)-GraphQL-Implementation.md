@@ -12,11 +12,8 @@ tags:
     "ZAST Engine",
     "Cybersecurity"
   ]
-# 📌 添加：用于 SEO 和 Social Meta Tags
 author: ZAST.AI
-# 📌 用于生成 Schema 的 'image' 属性，必须包含一个特色图片的路径，这个路径应该指向你的特色图片，且图片宽度应大于 1200 像素，以满足 Google 要求。
 image: /assets/img/ZAST.AI-Raised-$6M-Pre-A/banner.png
-# 📌 添加：更长的摘要用于 social media 和 Schema 'description'
 excerpt: "The ZAST engine has uncovered 7 verified vulnerabilities in Prime (CMS) v0.4.0. From insecure default configurations allowing Introspection Leakage to high-severity DoS amplification via uncapped query complexity, these unpatched flaws leave production instances exposed. Read our full technical breakdown and community mitigation guide."
 ---
 

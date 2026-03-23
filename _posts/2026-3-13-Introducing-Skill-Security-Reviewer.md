@@ -18,6 +18,7 @@ excerpt: "Skills are closer to installable apps than harmless text. Skill Securi
 ---
 
 
+
 ## Why the AI agent ecosystem needs to review skills before it trusts them
 
 **TL;DR:** Skills are closer to installable apps than harmless text. **Skill Security Reviewer** helps analyze skills for theft, obfuscation, and hidden intent before you trust them.

@@ -12,8 +12,7 @@ tags:
     "Vulnerability Assessment",
     "Cloud Development"
   ]
-# 📌 关键修改：添加 image 属性
-# 这个路径应该指向你的特色图片，且图片宽度应大于 1200 像素，以满足 Google 要求。
+
 image: /assets/img/Quickl-Start-a-ZAST.AI-Assessment-Using-GitHub-Codespaces/1.PNG
 
 ---

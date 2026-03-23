@@ -17,11 +17,8 @@ tags:
     "XXE",
     "SSRF"
   ]
-# 📌 添加：用于 SEO 和 Social Meta Tags
 author: ZAST.AI
-# 📌 用于生成 Schema 的 'image' 属性，必须包含一个特色图片的路径，这个路径应该指向你的特色图片，且图片宽度应大于 1200 像素，以满足 Google 要求。
 image: /assets/img/ZAST.AI-Raised-$6M-Pre-A/banner.png
-# 📌 添加：更长的摘要用于 social media 和 Schema 'description'
 excerpt: "2025 was a watershed year for ZAST.AI. Our AI agent moved beyond syntax checking to discover 115+ verified CVEs in major platforms like Microsoft Azure, Apache Struts2, and Alibaba Nacos. This report breaks down the 'Big Game' captures, Logic Vulnerabilities, and the rise of AI-driven Automated PoC validation."
 ---
 
