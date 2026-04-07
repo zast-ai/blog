@@ -44,17 +44,34 @@ During its development, ZAST.AI uncovered hundreds of zero-day vulnerabilities. 
 The results of the last ten days have been humbling and affirming:
 
 - As of July 28th, we have submitted **78** vulnerabilities.
+<<<<<<< HEAD
 
   ![Vulnerability submissions growth on VulDB.com]({{'/assets/img/vuldb/growth.png' | relative_url }})
+=======
+    <div style="text-align: center;">
+  <img src="{{'/assets/img/vuldb/growth.png' | relative_url }}" alt="Star count distribution of affected repositories">
+</div>
+- This effort has made Zast.ai the **#1** global contributor to VulDB for the month of July, 2025.
+  <div style="text-align: center;">
+  <img src="{{'/assets/img/vuldb/number1.png' | relative_url }}" alt="Star count distribution of affected repositories">
+</div>
+- In just over a week, Zast.ai has reached **#37** among all-time global contributors.
+>>>>>>> efc580e (update blog)
 
 - This effort has made ZAST.AI the **#1** global contributor to VulDB for the month of July, 2025.
 
+<<<<<<< HEAD
   ![ZAST.AI vulnerability submissions on VulDB.com]({{'/assets/img/vuldb/number1.png' | relative_url }})
 
 - In just over a week, ZAST.AI has reached **#31** among all-time global contributors on [VulDB.com](https://vuldb.com/).
   The impact of these discoveries extends far beyond numbers. Our vulnerability findings span from critical infrastructure components to popular development tools, representing some of the most widely-used open source projects in the world.
 
   ![Star count distribution of affected repositories]({{'/assets/img/vuldb/starpie.png' | relative_url }})
+=======
+<div style="text-align: center;">
+  <img src="{{'/assets/img/vuldb/starpie.png' | relative_url }}" alt="Star count distribution of affected repositories">
+</div>
+>>>>>>> efc580e (update blog)
 
 We don't share these numbers to boast, but to offer as a proof of concept: that an AI partner, focused with precision, can meaningfully enhance human expertise and help secure the code we all rely on.
 
