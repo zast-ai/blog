@@ -27,9 +27,9 @@ publish_to_github:
   stage: release
   image: ruby:3.1
   rules:
-    - if: $CI_PIPELINE_SOURCE == "schedule" && $CI_COMMIT_BRANCH == "dev"
-    - if: $CI_PIPELINE_SOURCE == "web" && $CI_COMMIT_BRANCH == "dev"
-    - if: $CI_PIPELINE_SOURCE == "api" && $CI_COMMIT_BRANCH == "dev"
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_PIPELINE_SOURCE == "api"
   before_script:
     - apt-get update
     - apt-get install -y --no-install-recommends git bash curl jq

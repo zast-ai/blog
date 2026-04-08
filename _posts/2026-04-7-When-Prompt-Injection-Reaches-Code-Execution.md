@@ -12,12 +12,10 @@ tags:
     "AI Supply Chain Security",
     "ZAST.AI"
   ]
-author: ZAST.AI
+author: ZAST Team
 image: assets/img/logo-single.png
 excerpt: "ZAST.AI identified and verified a previously undisclosed ACE path in `verl <= 0.7.0`. The core issue is not just eval(), but whether prompt-controlled model output can cross an execution boundary inside the reward pipeline and become executable state."
 ---
-
-# `verl` Analysis: When Prompt Injection Reaches Code Execution
 
 > | Field | Value |
 > |---|---|
@@ -109,7 +107,7 @@ This is also the secondary lesson from the case: **AI supply-chain risk is no lo
 
 That does not mean any training dataset is easy to poison in practice. The more realistic scenarios are teams reusing public datasets, third-party samples, or externally collected data in training and evaluation pipelines while downstream code continues to trust model output.
 
-## Why Traditional SAST Often Misses the Security Property
+## Why This Security Property Is Hard to Capture with Sink-Only Detection
 
 Traditional SAST can usually flag `eval()`.
 
@@ -131,3 +129,4 @@ That is the broader shift modern AppSec has to deal with in AI systems. The prob
 **Sources**
 - Vulnerability report: [ByteDance / verl ACE report](https://github.com/zast-ai/vulnerability-reports/blob/main/bytedance/verl_rce.md)
 - Project homepage: [verl on GitHub](https://github.com/verl-project/verl)
+- POC Demo: [Video on Youtube](https://www.youtube.com/watch?v=X3FwfYS-Xq0)
