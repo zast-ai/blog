@@ -2,7 +2,7 @@
 title: "CVE-2026-3352 Analysis: Persistent PHP Code Injection in Easy PHP Settings"
 description: "Technical analysis of CVE-2026-3352 in Easy PHP Settings <= 1.0.4. ZAST.AI verified that sanitized admin input is written into `wp-config.php` as executable PHP, enabling persistent PHP code injection."
 keywords: "CVE-2026-3352, Easy PHP Settings, WordPress vulnerability, PHP code injection, wp-config.php, sanitize_text_field, ZAST.AI, vulnerability research"
-date: 2026-04-17
+date: 2026-05-12
 categories: ["Vulnerability Research", "WordPress Security"]
 tags:
   [
