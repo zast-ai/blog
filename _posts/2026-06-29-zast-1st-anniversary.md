@@ -29,7 +29,7 @@ excerpt: "ZAST.AI turns one and opens free access to its full vulnerability asse
 
 [![Filter Noise to Confirmed Exploits]({{ "/assets/img/1stAnni/EDM-SS-01.png" | relative_url }})](https://zast.ai/anniversary?utm_source=blog&utm_medium=organic_content&utm_campaign=zast_1st_anniversary_2026&utm_content=blog_post_en)
 
-ZAST.AI turns one this month. Over the past year, we set out to change how security teams handle vulnerability reports. Static scanners produce volumes of alerts, but most never get verified. Security teams waste hours triaging noise while real risks slip through.
+ZAST.AI turns one this July. Over the past year, we set out to change how security teams handle vulnerability reports. Static scanners produce volumes of alerts, but most never get verified. Security teams waste hours triaging noise while real risks slip through.
 
 That is why we are opening our full assessment stack for free through August 30, 2026. No credit card, no commitment. We want security teams and developers to experience what it feels like to work with verified, exploitable proof-of-concepts instead of raw alert lists.
 
