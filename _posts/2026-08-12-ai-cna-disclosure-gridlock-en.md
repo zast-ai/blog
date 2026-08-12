@@ -2,7 +2,7 @@
 title: "The Truth Beneath the Iceberg: The CVE Review Gridlock"
 description: "In July 2026 VulDB passed 0 of 1,163 submissions through review. AI-scale discovery broke manual CVE disclosure across NVD, GitHub, and vendor CNAs. Here is the evidence — and the fix."
 keywords: "CVE review gridlock, vulnerability disclosure backlog, AI vulnerability discovery, VulDB July 2026, NVD rating gap, GitHub Advisory surge, AI batch reports, vulnerability verification, ZAST.AI, intelligent review infrastructure"
-date: 2026-08-12
+date: 2026-08-11
 categories: ["Vulnerability Research", "Industry Analysis"]
 tags:
   - "CVE disclosure"
