@@ -15,8 +15,6 @@ image: assets/img/logo-single.png
 excerpt: "ZAST PFW caught the Flooding Dropper malware that leading supply-chain vendors missed — all packages flagged malicious, zero false positives."
 ---
 
-# 1,033 Malicious npm Packages: How ZAST PFW Caught the Malware Leading Vendors Missed
-
 Recently, the npm ecosystem was hit by a new large-scale poisoning wave: over **1,033 malicious packages** flooded the registry within days, backed by a multi-stage dropper targeting Windows, Linux, and macOS — with alleged targets pointing at Russian financial institutions. This was no ordinary dependency poisoning; it was a "flooding" supply-chain attack — the attacker used AI-generated squatting package names and a flood of random accounts to overwhelm the review and response systems in one blow.
 
 ## 1. Background: A "Flooding" Poisoning Campaign
