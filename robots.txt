@@ -3,7 +3,9 @@ layout: null
 sitemap: false
 ---
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://blog.zast.ai/sitemap.xml
 
 User-agent: anthropic-ai
 Disallow: /
